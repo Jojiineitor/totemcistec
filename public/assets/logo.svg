@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 160" width="100%" height="100%">
+  <defs>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee" />
+      <stop offset="50%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- High-tech Emblem Hexagon -->
+  <g transform="translate(30, 20)">
+    <polygon points="60,5 110,35 110,85 60,115 10,85 10,35" fill="#0f172a" stroke="url(#logoGrad)" stroke-width="4" filter="url(#glow)"/>
+    <polygon points="60,20 95,42 95,78 60,100 25,78 25,42" fill="url(#logoGrad)" opacity="0.15" />
+    
+    <!-- Chip Nodes -->
+    <circle cx="60" cy="60" r="14" fill="url(#logoGrad)" />
+    <line x1="60" y1="20" x2="60" y2="46" stroke="#22d3ee" stroke-width="3" stroke-linecap="round" />
+    <line x1="60" y1="74" x2="60" y2="100" stroke="#3b82f6" stroke-width="3" stroke-linecap="round" />
+    <line x1="25" y1="60" x2="46" y2="60" stroke="#06b6d4" stroke-width="3" stroke-linecap="round" />
+    <line x1="74" y1="60" x2="95" y2="60" stroke="#06b6d4" stroke-width="3" stroke-linecap="round" />
+  </g>
+
+  <!-- Typography -->
+  <text x="170" y="78" font-family="'Outfit', 'Inter', system-ui, sans-serif" font-weight="900" font-size="44" fill="#ffffff" letter-spacing="2">
+    TOTEM <tspan fill="url(#logoGrad)">DIGITAL</tspan>
+  </text>
+  <text x="172" y="112" font-family="'Inter', system-ui, sans-serif" font-weight="600" font-size="15" fill="#94a3b8" letter-spacing="8">
+    ASISTENCIA TÉCNICA ESPECIALIZADA
+  </text>
+</svg>
